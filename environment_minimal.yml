@@ -1,0 +1,12 @@
+name: ctgov
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.12
+  - requests
+  - numpy
+  - statsmodels
+  - matplotlib
+  - pandas
+  - scipy

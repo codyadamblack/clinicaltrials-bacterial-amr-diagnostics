@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the archived software release and associated manuscript."
+title: "ClinicalTrials.gov bacterial antimicrobial resistance diagnostic landscape analysis"
+type: software
+version: "1.0.0"
+date-released: "2026-08-21"
+authors:
+  - family-names: "Black"
+    given-names: "Cody"
+repository-code: "https://github.com/codyadamblack/clinicaltrials-bacterial-amr-diagnostics"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22046953"

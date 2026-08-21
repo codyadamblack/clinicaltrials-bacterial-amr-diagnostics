@@ -1,0 +1,48 @@
+{
+  "version": "3.2.5",
+  "curated_beta_lactamase_gene_regex": "\\bbla(?:CTX[- ]?M(?:[- ]?\\d+)?|KPC(?:[- ]?\\d+)?|NDM(?:[- ]?\\d+)?|OXA[- ]?\\d+|VIM(?:[- ]?\\d+)?|IMP(?:[- ]?\\d+)?|CMY(?:[- ]?\\d+)?|SHV(?:[- ]?\\d+)?|TEM(?:[- ]?\\d+)?|GES(?:[- ]?\\d+)?|PER(?:[- ]?\\d+)?|VEB(?:[- ]?\\d+)?|DHA(?:[- ]?\\d+)?|ADC(?:[- ]?\\d+)?|PDC(?:[- ]?\\d+)?|ACC(?:[- ]?\\d+)?|ACT(?:[- ]?\\d+)?|MIR(?:[- ]?\\d+)?|FOX(?:[- ]?\\d+)?|MOX(?:[- ]?\\d+)?|LAT(?:[- ]?\\d+)?|BIL(?:[- ]?\\d+)?|ROB(?:[- ]?\\d+)?|CARB(?:[- ]?\\d+)?|SFO(?:[- ]?\\d+)?)\\b",
+  "other_resistance_gene_regex": "\\b(mecA|mecC|vanA|vanB|vanC|mcr[- ]?[1-9]|qnrA|qnrB|qnrS|aac\\(6['’]?-Ib-cr\\)|tet\\([A-Z]\\)|erm\\([A-Z]\\)|ermA|ermB|ermC|cfr|optrA|poxtA|dfrA\\d+|sul[123]|fosA\\d*|rpoB mutation|gyrA mutation|parC mutation|16S rRNA methylase|armA|rmtA|rmtB|rmtC|rmtD|rmtF)\\b",
+  "named_bacterial_assay_title_regex": "\\b(?:(?:keypath\\s+)?mrsa\\s*(?:/|and|-)\\s*mssa(?:\\s+blood\\s+culture)?\\s+(?:test|assay|panel)|(?:keypath\\s+)?mssa\\s*(?:/|and|-)\\s*mrsa(?:\\s+blood\\s+culture)?\\s+(?:test|assay|panel)|mrsa\\s*[-/]?\\s*pcr|mssa\\s*[-/]?\\s*pcr|(?:carbapenemase|esbl|cre|cpe|methicillin resistance|vancomycin resistance|resistance gene)\\s+(?:test|assay|pcr|panel)|(?:blood culture|bacterial|microbial|pathogen)\\s+(?:identification|detection)\\s+(?:test|assay|panel)|rapid\\s+(?:pathogen|bacterial|microbial)\\s+(?:identification|detection|test|assay)|(?:antimicrobial|antibiotic)\\s+susceptibility\\s+(?:test|testing|assay)|rapid\\s+ast|phenotypic\\s+ast)\\b",
+  "syndrome_direct_diagnostic_title_regex": "\\b(?:rapid|molecular|microbiologic(?:al)?|metagenomic|etiologic(?:al)?)\\s+diagnos(?:is|tic)(?:\\s+(?:test|testing|study|strategy))?\\s+(?:of|for)\\s+(?:suspected\\s+|postoperative\\s+|acute\\s+|complicated\\s+)?(?:abdominal|intra[- ]abdominal|bloodstream|urinary tract|respiratory tract|lung|wound|surgical site|bone and joint|prosthetic joint|brain|central nervous system)?\\s*infection(?:s)?\\b",
+  "point_of_care_pathogen_testing_title_regex": "\\b(?:point[-\\u2010-\\u2015\\u2212 ]of[-\\u2010-\\u2015\\u2212 ]care|bedside)\\s+(?:test(?:ing)?|assay|diagnostic(?: testing)?)\\s+(?:of|for)?\\s*(?:respiratory\\s+|bacterial\\s+|microbial\\s+)?pathogen(?:s)?\\b|\\b(?:respiratory\\s+|bacterial\\s+|microbial\\s+)?pathogen(?:s)?\\s+(?:point[-\\u2010-\\u2015\\u2212 ]of[-\\u2010-\\u2015\\u2212 ]care|bedside)\\s+(?:test(?:ing)?|assay)\\b",
+  "syndromic_diagnostic_implementation_title_regex": "\\b(?:improv(?:e|ing)|implementation|intervention|care pathway|diagnostic stewardship).*\\bdiagnos(?:is|tic)\\b.*\\b(?:infection(?:s)?|meningitis|encephalitis|sepsis|pneumonia)\\b|\\bdiagnos(?:is|tic)\\b.*\\b(?:management|care pathway|implementation)\\b.*\\b(?:infection(?:s)?|meningitis|encephalitis|sepsis|pneumonia)\\b",
+  "host_immune_analyte_regex": "\\b(?:antibody[- ]secreting cell(?:s)?|(?:asc|plasmablast)\\s+elispot|b[- ]cell(?:ular)?\\s+(?:response|activation|assay|diagnostic(?:s)?)|t[- ]cell(?:ular)?\\s+(?:response|activation|assay|diagnostic(?:s)?)|host immune response|host[- ]response biomarker(?:s)?|serologic(?:al)?\\s+(?:response|assay|testing|diagnos(?:is|tic))|antibody response|pathogen[- ]specific antibodies|borrelia[- ]specific asc(?:s)?|borrelia[- ]specific antibody[- ]secreting cell(?:s)?|febridx|myxovirus resistance protein a|\\bmxa\\b)\\b",
+  "host_immune_diagnostic_regex": "\\b(?:febridx|(?:host immune response|host[- ]response biomarker(?:s)?|antibody[- ]secreting cell(?:s)?|(?:asc|plasmablast)\\s+elispot|b[- ]cell(?:ular)?\\s+(?:response|assay|diagnostic(?:s)?)|t[- ]cell(?:ular)?\\s+(?:response|assay|diagnostic(?:s)?)|serologic(?:al)?\\s+(?:response|assay|testing)|antibody response|myxovirus resistance protein a|\\bmxa\\b).{0,100}\\b(?:diagnos(?:is|tic)|test(?:ing)?|assay|validation|sensitivity|specificity|differentiat(?:e|ion|ing)|distinguish)|(?:diagnos(?:is|tic)|test(?:ing)?|assay|validation|sensitivity|specificity|differentiat(?:e|ion|ing)|distinguish).{0,100}\\b(?:host immune response|host[- ]response biomarker(?:s)?|antibody[- ]secreting cell(?:s)?|(?:asc|plasmablast)\\s+elispot|b[- ]cell(?:ular)?\\s+(?:response|assay|diagnostic(?:s)?)|t[- ]cell(?:ular)?\\s+(?:response|assay|diagnostic(?:s)?)|serologic(?:al)?\\s+(?:response|assay|testing)|antibody response|myxovirus resistance protein a|\\bmxa\\b))",
+  "direct_microbial_analyte_regex": "\\b(?:bacterial|microbial|pathogen|pneumococcal|streptococcal|staphylococcal)\\s+(?:antigen|toxin|capsular antigen|cell[- ]wall antigen|protein|dna|rna|nucleic acid)\\b|\\b(?:bacterial|microbial|pathogen)\\s+nucleic[- ]acid\\b",
+  "febridx_regex": "\\bfebridx(?:®)?\\b",
+  "mxa_regex": "\\b(?:myxovirus resistance protein a|mx[- ]?a)\\b",
+  "crp_regex": "\\b(?:c[- ]reactive protein|crp)\\b",
+  "microbial_target_regex": "\\b(?:pathogen(?:s)?|bacterium|bacteria|bacterial|microbial|microbiologic(?:al)?|organism identification|blood culture|positive culture|clinical isolate|bacterial dna|microbial dna|bacterial rna|microbial rna|16s rrna|bacterial antigen|microbial antigen|mrsa|mssa|cre|cpe|esbl|vre|carbapenemase|beta[- ]lactamase|β[- ]lactamase|resistance gene|resistance marker|antimicrobial susceptibility|antibiotic susceptibility|susceptibility testing|minimum inhibitory concentration|mic testing|rapid ast|phenotypic ast|culture identification)\\b",
+  "organ_injury_prognostic_target_regex": "\\b(?:acute kidney injury|\\baki\\b|renal injury|kidney injury|organ failure|multiple organ dysfunction|cardiac injury|myocardial injury|hepatic injury|liver injury|acute lung injury|mortality prediction|severity prediction|prognostic biomarker|risk stratification|disease severity|predict(?:ion|ive) of mortality)\\b",
+  "mixed_viral_bacterial_panel_regex": "\\b(?:bacterial and viral|viral and bacterial|bacterial versus viral|bacterial vs viral|respiratory pathogen panel|multiplex respiratory panel|syndromic respiratory panel|biofire spotfire|spotfire|filmarray respiratory|respiratory pathogen testing|testing of respiratory pathogens?)\\b",
+  "high_value_fields": [
+    "conditions_keywords",
+    "intervention_names",
+    "primary_outcomes",
+    "secondary_outcomes",
+    "title"
+  ],
+  "primary_relevance_fields": [
+    "conditions_keywords",
+    "intervention_names",
+    "primary_outcomes",
+    "title"
+  ],
+  "predicted_strata": [
+    "CORE_AMR_DIAGNOSTIC",
+    "BROAD_BACTERIAL_DIAGNOSTIC",
+    "HOST_RESPONSE_DIAGNOSTIC",
+    "CLINICAL_SYNDROMIC_SUPPORT",
+    "MECHANISM_SUPPORT",
+    "SPECIAL_PATHOGEN_DIAGNOSTIC",
+    "SURVEILLANCE_SUPPORT",
+    "THERAPEUTIC_SUPPORT"
+  ],
+  "diagnostic_depth_labels": {
+    "0": "organism_identification_only",
+    "1": "binary_resistance_marker",
+    "2": "phenotypic_ast_or_mic",
+    "3": "multimechanism_or_resistance_prediction",
+    "4": "quantitative_resistance_mechanism"
+  }
+}
